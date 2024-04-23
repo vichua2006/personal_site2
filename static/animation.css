@@ -1,0 +1,90 @@
+@keyframes FullRotation {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.sq-container {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    height: 800px;
+
+    border-radius: 800px;
+    transform: translate(-400px, -400px);
+
+}
+
+.full-spin {
+    animation-name: FullRotation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+.sq1 {
+    z-index: 5;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:1px solid white;
+    background-color: black;
+
+}
+
+.sq2 {
+    z-index: 4;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border:1px solid white;
+    background-color: black;
+
+    animation-delay: 0.1s;
+}
+
+.sq3 {
+    z-index: 3;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border:1px solid white;
+    background-color: black;
+
+    animation-delay: 0.2s;
+}
+
+.sq4 {
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border:1px solid white;
+    background-color: black;
+
+    animation-delay: 0.25s;
+}
+
+.sq5 {
+    z-index: 1;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border:1px solid white;
+    background-color: black;
+
+    animation-delay: 0.3s;
+}

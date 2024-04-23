@@ -1,0 +1,195 @@
+* {
+    --main_font: "DM Serif Display";
+    --other_font: "Courier";
+
+    font-weight: 400;
+    
+}
+
+@media (max-width: 1000px) {
+    img.profile-picture {
+      display: none;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    color: white;
+    font-family: var(--other_font);
+    font-size: 12pt;
+    bottom: 20px;
+    left: calc(50vw - 15em);
+    overflow: hidden;
+}
+
+.shift-when-hovered:hover {
+    transform: translate(-5px, -5px);
+}
+
+
+img.logo {
+    position: relative;
+
+    width: 60px;
+    border-radius: 50px;
+    top: 50%;
+    margin-top: -35px;
+
+    transform: all 0.5s;
+}
+
+img.logo:hover {
+    opacity: 0.8;
+}
+
+img.logo:active {
+    opacity: 0.5;
+}
+
+img.profile-picture{
+    position: absolute;
+    width: auto;
+    height: calc(300px + 40vh);
+    right: 10%;
+    top: 52%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 250px;
+    overflow: hidden;
+}
+
+.nav-bar {
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.nav-button {
+    position: relative;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: 20px;
+    padding: 10px;
+    float: right;
+    width: 125px;
+    line-height: 30px;
+
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-family: var(--other_font);
+    font-size: 1rem;
+    text-align: center;
+
+    transition: all 0.2s;
+    
+}
+
+.nav-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.nav-button:active {
+    opacity: 0.5;
+}
+
+.main-text-box {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    left: 10%;
+    width: 80%;
+    height: 20%;
+}
+
+.main-text-name {
+    position: relative;
+    display: block;
+    color: white;
+    font-family: var(--main_font);
+    font-size: calc(20px + 5.5vw);
+}
+
+.main-text-animated {
+    position: relative;
+    display: block;
+    color: white;
+    font-family: var(--main_font);
+    /* set min font size: https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css */
+    font-size: calc(15px + 4.5vw);
+
+}
+
+.colored-text {
+    font: inherit;
+    
+    background: linear-gradient(to right, #0066FF , #00FF75); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.SM-link-container {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    left: 10%;
+    margin-top: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.spacer {
+    pointer-events: none;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 35vw;
+    max-height: 300px;
+}
+
+div.container {
+
+    background-color: #242424;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: fit-content;
+}
+
+i.fa{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+
+    transition: all 0.2s;
+}
+
+
+i.fa:hover {
+    background: linear-gradient(to top, #0066FF , #2793f8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
